@@ -54,17 +54,19 @@
             </div>
         </div>
         <div class="scroll-animation">
-            <div class="scroll-down1">
-                <i class="fa fa-angle-down"></i>
-            </div>
+            <a href="#rocket">
+                <div class="scroll-down1">
+                    <i class="fa fa-angle-down"></i>
+                </div>
+            </a>
             <p>scroll down</p>
         </div>
-        <div class="rocket-and-cloud">
+        <div class="rocket-and-cloud" id="rocket">
             <img src="./images/rocket.png" alt="rocket">
             <img src="./images/cloud.png" alt="cloud">
         </div>
     </div>
-    <div class="six-boxes">
+    <div class="six-boxes" id="six-boxes">
         <div class="box-with-icon">
             <img src="./images/spa-darth-vader@3x.png" alt="icon">
             <div class="card-info">
@@ -336,7 +338,7 @@
     </div>
     <div class="slider-two">
         <div class="swiper mySwiper3">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper custom-swiper">
                 <div class="swiper-slide">
                     <div class="img-with-info">
                         <div class="img-hover">
@@ -518,6 +520,7 @@
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
+    var widthFirst = $(window).width();
     var swiper = new Swiper(".mySwiper", {
         cssMode: true,
         navigation: {
@@ -530,20 +533,76 @@
         mousewheel: true,
         keyboard: true,
     });
-    var swiper2 = new Swiper(".mySwiper2", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-    var swiper3 = new Swiper(".mySwiper3", {
-        slidesPerView: 4,
-        spaceBetween: 51,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
+    function largeMode() {
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+        var swiper3 = new Swiper(".mySwiper3", {
+            slidesPerView: 4,
+            spaceBetween: 50,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
+        });
+    }
+    function meduimMode() {
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+        var swiper3 = new Swiper(".mySwiper3", {
+            slidesPerView: 2,
+            spaceBetween: 50,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
+        });
+    }
+    function smallMode() {
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+        var swiper3 = new Swiper(".mySwiper3", {
+            cssMode: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            }
+        });
+    }
+    if (widthFirst > 1200) {
+        largeMode();
+    } else if (widthFirst > 768) {
+        meduimMode();
+    } else {
+        smallMode();
+    }
+    $(window).resize(function () {
+        var width = $(window).width();
+        if (width > 1200) {
+            largeMode();
+        } else if (width > 768) {
+            meduimMode();
+        } else {
+            smallMode();
         }
     });
 </script>

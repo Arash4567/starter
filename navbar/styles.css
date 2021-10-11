@@ -9,6 +9,7 @@
 html {
     font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 li {
@@ -451,7 +452,7 @@ a {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   }
   .slider-info img {
-      width: 100%;
+      width: 100% !important;
   }
   .slider-info h3 {
       text-transform: uppercase;
@@ -481,9 +482,10 @@ a {
       color: #f00;
   }
   .slider-two {
-      height: 65vh;
+      height: 50vh;
   }
   .mySwiper3 {
+      width: 80%;
       padding: 0 50px;
   }
   .img-hover {
@@ -491,7 +493,7 @@ a {
       /* padding-left: 50px; */
   }
   .img-hover img {
-      width: 100%;
+      width: 100% !important;
       height: 50vh;
   }
   .dev-info {
@@ -549,7 +551,7 @@ a {
   .footer {
       display: flex;
       justify-content: space-between;
-      margin: 10vh;
+      margin: 10vh 14vh;
       padding: 10px;
       font-size: 150%;
   }
@@ -675,8 +677,8 @@ a {
         margin-right: 0;
     }
     
-  .quick-navigator {
-   display: none;
+    .quick-navigator {
+        display: none;
     }
 }
 
