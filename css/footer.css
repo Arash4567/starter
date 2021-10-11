@@ -1,0 +1,72 @@
+footer {
+    padding-top: 15vh;
+    height: 55vh;
+    width: 100%;
+    background-image: url(".././images/earth.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    color: #fff;
+  }
+  .quick-navigator {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      font-size: 150%;
+      
+  }
+  .custom-nav-quick li {
+      margin: 0;
+      padding: 0;
+  }
+  .custom-nav-quick li > a {
+      color: #fff;
+  }
+  .nav-item1 a:hover {
+    color: #f00;
+  }
+  .location p {
+      padding: 10px 0;
+  }
+  .company h3,.location h3, .news h3, .learn-more-section h3 {
+      padding-bottom: 15px;
+  }
+  .company ul>li,.location ul>li, .news ul>li, .learn-more-section ul>li {
+      padding-bottom: 5px;
+  }
+  .footer {
+      display: flex;
+      justify-content: space-between;
+      margin: 10vh 14vh;
+      padding: 10px;
+      font-size: 150%;
+  }
+  .footer a {
+      text-decoration: none;
+      color: #fff;
+      margin-left: 15px;
+  }
+  .footer a:hover {
+      color: #f00;
+  }
+  .social-footer {
+      display: flex;
+  }
+  @media only screen and (max-width: 768px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        margin: 0;
+        margin-top: 8vh;
+        justify-items: center;
+    }
+    .company {
+        display: none;
+    }
+    .news {
+        display: none;
+    }
+    .quick-navigator {
+        grid-template-columns: repeat(2,1fr);
+    }
+  }

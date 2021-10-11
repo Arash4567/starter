@@ -1,10 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-
-html {
-    font-size: 62.5%;
-    font-family: 'Montserrat', sans-serif;
-}
-
 body {
     background-color: #adadad;
     width: 100%;
@@ -108,21 +101,13 @@ Coming soon
     border: 1px solid #ff090f;
 }
 
-#content .footer {
-    display: flex;
-    text-align: center;
-    margin: 10vh;
-    padding: 10px;
-    font-size: 150%;
+#content .social-footer ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: 0;
 }
-#content .footer a {
-    text-decoration: none;
+#content .social-footer ul li {
+    display: inline-block;
+    margin-right: 5px;
     color: #fff;
-    margin-left: 15px;
-}
-#content .footer a:hover {
-    color: #f00;
-}
-#content .social-footer {
-    display: flex;
 }

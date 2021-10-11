@@ -1,16 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-family: 'Montserrat', sans-serif;
-}
-
 .text-justify {
     text-align: justify-all;
 }
@@ -38,7 +25,7 @@ html {
 }
 
 .bg-blog {
-    background-image: url("./images/bg-blog.png");
+    background-color: #727070;
     height: 70vh;
 }
 
