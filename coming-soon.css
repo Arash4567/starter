@@ -108,13 +108,21 @@ Coming soon
     border: 1px solid #ff090f;
 }
 
-#content .social-footer ul {
-    list-style-type: none;
-    margin-bottom: 0;
-    margin-left: 0;
+#content .footer {
+    display: flex;
+    text-align: center;
+    margin: 10vh;
+    padding: 10px;
+    font-size: 150%;
 }
-#content .social-footer ul li {
-    display: inline-block;
-    margin-right: 5px;
+#content .footer a {
+    text-decoration: none;
     color: #fff;
+    margin-left: 15px;
+}
+#content .footer a:hover {
+    color: #f00;
+}
+#content .social-footer {
+    display: flex;
 }
