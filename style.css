@@ -532,6 +532,17 @@ footer {
 /*--------------------
 Not Found
 --------------------*/
+.bg-black{
+    background-color: #000000;
+}
+
+.notFound footer {
+    padding-top: 15vh;
+    height: 50vh;
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+}
 
 .notFound-wrapper{
     background-image: url("./images/404-background.png");
