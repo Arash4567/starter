@@ -376,7 +376,7 @@ a {
   .social i {
       padding: 10px 5px;
   }
-  .social i:hover {
+  .social i:hover, .dev-social i:hover {
       color: #f00;
   }
   .video-info p {
@@ -481,11 +481,38 @@ a {
       color: #f00;
   }
   .slider-two {
+      height: 65vh;
+  }
+  .mySwiper3 {
+      padding: 0 50px;
+  }
+  .img-hover {
+      position: relative;
+      /* padding-left: 50px; */
+  }
+  .img-hover img {
+      width: 100%;
       height: 50vh;
+  }
+  .dev-info {
+      background-color: #000;
+      color: #fff;
+      width: 100%;
+      position: absolute;
+      top: 36vh;
+      height: 10vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      display: none;
+      
+  }
+  .img-hover:hover >.dev-info {
+      display: flex;
   }
   footer {
     padding-top: 15vh;
-    height: 50vh;
+    height: 55vh;
     width: 100%;
     background-image: url("../images/earth.png");
     background-repeat: no-repeat;
@@ -509,6 +536,15 @@ a {
   }
   .nav-item1 a:hover {
     color: #f00;
+  }
+  .location p {
+      padding: 10px 0;
+  }
+  .company h3,.location h3, .news h3, .learn-more-section h3 {
+      padding-bottom: 15px;
+  }
+  .company ul>li,.location ul>li, .news ul>li, .learn-more-section ul>li {
+      padding-bottom: 5px;
   }
   .footer {
       display: flex;
