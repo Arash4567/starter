@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #7a7a7a;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--------------------
+Coming soon
+--------------------*/
+
+.coming-soon-wrapper{
+    background-color: #7a7a7a;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
+
+html .main,
+body .main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+}
+#content {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: 24px;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    top: 33%;
+}
+#content p {
+    color: #e6dbae;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding: 0;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+#content p:last-child {
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin: 3em auto;
+    padding: 0;
+    letter-spacing: 0.1rem;
+}
+#content p:last-child > a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease-in;
+}
+#content p:last-child > a:hover {
+    color: #fff;
+}
+#content section {
+    color: #fff;
+    margin: 0 auto;
+    line-height: 24px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+#content section ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+#content section ul li {
+    display: inline-block;
+    margin-right: 2rem;
+    width: 6rem;
+}
+#content section .timenumbers {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin: 0 auto;
+    text-align: center;
+}
+#content section p.timedescription {
+    font-size: 0.5rem;
+    font-variant: small-caps;
+    line-height: 1.5rem;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 0px;
+}

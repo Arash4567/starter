@@ -581,6 +581,22 @@ Not Found
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
+.notFound-wrapper .content a:hover {
+    background-color: #f00;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    letter-spacing: -1px;
+    color: #fff;
+    box-shadow: 0 0 20px #f00;
+    border-color: #f00;
+}
+
+
+
 @media only screen and (max-width: 1120px) {
     .header {
         margin: 0;
