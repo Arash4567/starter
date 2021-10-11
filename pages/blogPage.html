@@ -1,290 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Blog page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/navbar.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/blog.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
-  </head>
-  <body>
-    <div class="bg-blog">
-      <header class="header">
-        <nav class="navbar">
-          <a href="./index.html" class="nav-logo">Logo</a>
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a href="./index.html" class="nav-link active">home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">services</a>
-            </li>
-            <li class="nav-item">
-              <a href="./pages/about.html" class="nav-link">about</a>
-            </li>
-            <li class="nav-item">
-              <a href="./pages/blogPage.html" class="nav-link">blog</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">pages</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link login">login</a>
-            </li>
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Home page</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+
+    <link href=".././css/blog.css" rel="stylesheet">
+    <script crossorigin="anonymous"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="bg-blog pb-5">
+    <header class="">
+        <nav class="navbar navbar-expand-sm navbar-collapse">
+            <div class="container">
+                <div class="navbar-collapse collapse" id="navbarToggleExternalContent">
+                    <ul class="navbar-nav mx-auto">
+
+                        <li class="nav-item me-lg-3">
+                            <a class="nav-link text-white" href="#">home</a>
+                        </li>
+                        <li class="nav-item me-lg-3">
+                            <a class="nav-link text-white" href="#">services</a>
+                        </li>
+                        <li class="nav-item me-lg-3">
+                            <a class="nav-link text-white" href="#">about</a>
+                        </li>
+                        <li class="nav-item me-lg-3">
+                            <a class="nav-link text-white" href="#">pages</a>
+                        </li>
+                        <li class="nav-item me-lg-3">
+                            <a class="nav-link text-danger" href="#">blog</a>
+                        </li>
+                        <li class="nav-item me-lg-3">
+                            <a class="nav-link text-white" href="#">contact</a>
+                        </li>
+                        <li class="nav-item me-lg-3">
+                            <a class="nav-link text-white" href="#">log
+                                in</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"
+                        class="navbar-toggler text-light mt-2" data-bs-target="#navbarToggleExternalContent"
+                        data-bs-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                <a class="navbar-brand text-white" href="#">Logo</a>
+            </div>
         </nav>
-      </header>
-      <div class="text-center my-5 py-5">
+    </header>
+    <div class="text-center my-5 py-5">
         <h1 class="text-white mt-5 display-5 fw-bold">Blog single</h1>
-        <h5 class="text-gray">home/blog single</h5>
-      </div>
+        <h5 class="text-gray ">home/blog single</h5>
     </div>
-    <div class="container pt-5 mt-5 w-90 margin">
-      <div class="px-3">
-        <div>
-          <img
-            alt="put there your img"
-            class="pb-3"
-            src="images/picture-shablon.png"
-          />
-          <br />
-          <span class="text-gray">LIFESTILE</span>
-          <span class="text-red float-end pe-4 me-2"
-            >JULY 9, 2017 • ALICE JOHNSTON</span
-          >
+</div>
+<div class="container pt-5 mt-5">
+    <div class="row">
+        <div class="col-md-7 col-10 offset-md-3 offset-1">
+            <div>
+                <img alt="put there your img" class="pb-3" src="../images/picture-shablon.png" style="width: 100.1%"/>
+                <br>
+                <span class="text-red float-end flex-wrap">JULY 9, 2017 • ALICE JOHNSTON</span>
+                <span class="text-gray">LIFESTILE</span>
+            </div>
+            <div class="content-center mt-2 text-gray">
+                <h1 class="text-black">PAPILION MINTER SAVIOR</h1>
+                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                    ultricies egestas
+                    diam, at
+                    dictum
+                    ligula tristique sed. Nulla facilisi. Nullam molestie dolor orci, bibendum aliquet mi
+                    elementum a.
+                    Maecenas
+                    pulvinar nibh eu leo </p>
+                <p class="text-justify">Fusce sollicitudin turpis vel nulla scelerisque cursus. Integer
+                    neque nibh,
+                    tincidunt sed
+                    tortor
+                    eget, elementum mattis nunc. Curabitur sit amet viverra mi. Nam id justo non lacus iaculis
+                    sagittis
+                    vel
+                    a
+                    ipsum. In lacinia pretium lacinia. Aliquam erat volutpat. Aliquam vitae purus non magna
+                    convallis
+                    luctus.
+                    Proin aliquet lectus sed erat pellentesque, eget consequat mi hendrerit. Proin tincidunt
+                    porta ex
+                    sit
+                    amet
+                    ornare. Suspendisse interdum mi non purus luctus, a efficitur odio ultricies. Ut vitae
+                    placerat
+                    quam. </p>
+            </div>
+            <div class="w-75 fw-lighter">
+                <ul class="ms-5 ps-2 mt-4">
+                    <li class="my-1">Consectetur adipiscing elit vtae alit libero</li>
+                    <li class="my-1">Nullam id dolor id eget lacinia odio posuere erat a ante</li>
+                    <li class="my-1">integer posuere erat dapibus posuere velit</li>
+                </ul>
+            </div>
+            <div class="p-4 p-sm-5 bg-gray position-relative">
+                <p class="mx-sm-2 mb-2 mb-sm-auto text-gray pe-sm-5">Nulla facilisi. Vestibulum, dui eu aliquam
+                    faucibus, est dui hendreit
+                    nulla,
+                    mouris eget tellus. Nulla accumson rutrum nibh, sed eleifend felis blandit
+                </p>
+                <span class="position-absolute d-none d-sm-block oswald">&#44;&#44;</span>
+            </div>
+            <div class="text-gray">
+                <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies
+                    egestas diam, at
+                    dictum ligula tristique sed. Nulla facilisi. Nullam molestie dolor orci, bibendum aliquet mi
+                    elementum a. Maecenas pulvinar nibh eu leo
+                </p>
+            </div>
+            <div class="text-gray">
+                <b class="text-black d-inline-block me-2 me-sm-3 mb-1">TAGS:</b>
+                <span>Fashion, </span>
+                <span>Lifestile, </span>
+                <span>Design, </span>
+                <span>Minimal </span>
+            </div>
+            <div class="text-gray mb-5">
+                <b class="text-black me-2 me-sm-3">SHARE:</b>
+                <span><i class="fab fa-facebook-f text-danger me-2 me-sm-3"></i></span>
+                <span><i class="fab fa-twitter me-2 me-sm-3"></i></span>
+                <span><i class="fab fa-pinterest-p me-2 me-sm-3"></i></span>
+                <span><i class="fab fa-google-plus-g me-2 me-sm-3"></i></span>
+                <span><i class="fab fa-instagram me-2 me-sm-3"></i></span>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-3 col-12 text-center text-lg-start offset-sm-0"><span class="rounded-circle rounded-span"></span></div>
+                <div class="col-lg-8 col-12 text-center offset-lg-1 offset-xl-0 text-lg-start">
+                    <h1 class="fw-14px fw-bold mt-3 ms-3 ps-2 ms-md-0 ps-md-0">RINA CHAUDHARY</h1>
+                    <p class="fw-12px mt-2 lh-lg">Hi. I’m Designer and CEO/Founder of ThemeXpose. I’m Creative Web
+                        Designer, UI/UX Designer, Web
+                        Developer, Business Enthusiast, StartUp Enthusiast, Speaker, Writer and Photographer. </p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <h1 class="fs-5 fw-bold mb-4 text-center text-lg-start">YOU MIGHT ALSO LIKE</h1>
+                <div class="col-lg-6 col-xl-4 col-9 offset-2 offset-lg-0">
+                    <span class="rounded-1 rounded-span-1"></span>
+                    <p>Ways to remember Something</p>
+                    <p>Ut wisi enim ad minim veniam,
+                        quis nostrud exerci ...</p>
+                </div>
+                <div class="col-lg-6 col-xl-4 col-9  offset-2 offset-lg-0">
+                    <span class="rounded-1 rounded-span-1"></span>
+                    <p>Draught Vaein Mynel</p>
+                    <p>Ut wisi enim ad minim veniam,
+                        quis nostrud exerci ...</p>
+                </div>
+                <div class="col-lg-6 col-xl-4 col-9 offset-2 offset-lg-0">
+                    <span class="rounded-1 rounded-span-1"></span>
+                    <p>Papilion Minter Savior</p>
+                    <p>Ut wisi enim ad minim veniam,
+                        quis nostrud exerci ...</p>
+                </div>
+            </div>
+            <div class="mt-4 mb-5">
+                <h1 class="fs-5 fw-bold mb-5 text-center text-lg-start">LEAVE A REPLY</h1>
+                <form>
+                    <div class="mb-5">
+                        <input class="w-100 form-control-user pb-3" id="review" name="review"
+                               placeholder="Write a review" type="text">
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <input class="w-100 form-control-user pb-3" id="name" name="name"
+                                   placeholder="Your name" type="text">
+                        </div>
+                        <div class="col-6">
+                            <input class="w-100 form-control-user pb-3" id="email" name="email"
+                                   placeholder="Your email" type="email">
+                        </div>
+                        <div class="mt-4">
+                            <button class="btn btn-danger fs-5 px-5 py-2 rounded-pill">submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="mt-5 pt-4">
+                <div class="row my-4">
+                    <div class="col-2"><span class="rounded-circle rounded-circle-1"></span></div>
+                    <div class="col-9 offset-1 offset-lg-0">
+                        <span class="fw-bold">John Black</span>
+                        <span class="text-danger">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                        <p>Authoritatively productize corporate "outside the box" thinking with clicks-and-mortar
+                            customer service. Proactively utilize premier total linkage without.</p>
+                        <h5 class="fs-6">12 MARCH 2021</h5>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-2"><span class="rounded-circle rounded-circle-1"></span></div>
+                    <div class="col-9 offset-1 offset-lg-0">
+                        <span class="fw-bold">Don Corleone</span>
+                        <span class="text-danger">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                        <p>Authoritatively productize corporate "outside the box" thinking with clicks-and-mortar
+                            customer service. Proactively utilize premier total linkage without.</p>
+                        <h5 class="fs-6">12 MARCH 2021</h5>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-2"><span class="rounded-circle rounded-circle-1"></span></div>
+                    <div class="col-9 offset-1 offset-lg-0">
+                        <span class="fw-bold">Micheal Corleone</span>
+                        <span class="text-danger">
+                        <i class="fas fa-star"></i>
+                    </span>
+                        <p>Authoritatively productize corporate "outside the box" thinking with clicks-and-mortar
+                            customer service. Proactively utilize premier total linkage without.</p>
+                        <h5 class="fs-6">12 MARCH 2021</h5>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="content-center mt-2 text-gray">
-          <h1 class="text-black">PAPILION MINTER SAVIOR</h1>
-          <p class="pe-3 text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            ultricies egestas diam, at dictum ligula tristique sed. Nulla
-            facilisi. Nullam molestie dolor orci, bibendum aliquet mi elementum
-            a. Maecenas pulvinar nibh eu leo
-          </p>
-          <p class="pe-3 text-justify">
-            Fusce sollicitudin turpis vel nulla scelerisque cursus. Integer
-            neque nibh, tincidunt sed tortor eget, elementum mattis nunc.
-            Curabitur sit amet viverra mi. Nam id justo non lacus iaculis
-            sagittis vel a ipsum. In lacinia pretium lacinia. Aliquam erat
-            volutpat. Aliquam vitae purus non magna convallis luctus. Proin
-            aliquet lectus sed erat pellentesque, eget consequat mi hendrerit.
-            Proin tincidunt porta ex sit amet ornare. Suspendisse interdum mi
-            non purus luctus, a efficitur odio ultricies. Ut vitae placerat
-            quam.
-          </p>
-        </div>
-        <div class="w-75 fw-lighter">
-          <ul class="ms-5 ps-2 mt-4">
-            <li class="my-1">Consectetur adipiscing elit vtae alit libero</li>
-            <li class="my-1">
-              Nullam id dolor id eget lacinia odio posuere erat a ante
-            </li>
-            <li class="my-1">integer posuere erat dapibus posuere velit</li>
-          </ul>
-        </div>
-        <div class="p-5 bg-gray position-relative">
-          <p class="mx-2 text-gray pe-5">
-            Nulla facilisi. Vestibulum, dui eu aliquam faucibus, est dui
-            hendreit nulla, mouris eget tellus. Nulla accumson rutrum nibh, sed
-            eleifend felis blandit
-          </p>
-          <span class="position-absolute oswald">&#44;&#44;</span>
-        </div>
-        <div class="text-gray">
-          <p class="mt-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            ultricies egestas diam, at dictum ligula tristique sed. Nulla
-            facilisi. Nullam molestie dolor orci, bibendum aliquet mi elementum
-            a. Maecenas pulvinar nibh eu leo
-          </p>
-        </div>
-      </div>
     </div>
-    <!-- You might also like -->
-    <h1 class="you-might-header">You might also like</h1>
-    <div class="you-might">
-      <div class="might-box">
-        <img src="../images/background.png" alt="img">
-        <h3>Lorem ipsum dolor sit.</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet modi praesentium quis ad aut excepturi...</p>
-      </div>
-      <div class="might-box">
-        <img src="../images/background.png" alt="img">
-        <h3>Lorem ipsum dolor sit.</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet modi praesentium quis ad aut excepturi...</p>
-      </div>
-      <div class="might-box">
-        <img src="../images/background.png" alt="img">
-        <h3>Lorem ipsum dolor sit.</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet modi praesentium quis ad aut excepturi...</p>
-      </div>
-    </div>
-    <h1 class="leave-a-reply">Leave a reply</h1>
-    <div class="leave-box">
-      <form>
-        <input type="text" placeholder="Write a review">
-        <div class="your-name-box">
-          <input type="text" placeholder="Your name">
-        <input type="email" placeholder="Your email">
-        </div>
-        <input type="submit" value="Submit" class="submit">
-      </form>
-    </div>
-    <div class="users-box">
-      <div class="user-box">
-        <div class="avatar">
-          <img src="../images/man-round.png" alt="man">
-        </div>
-        <div class="user-info">
-          <h3>Jack Ma <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, voluptate. Hic placeat excepturi quasi similique.</p>
-          <h4 class="user-date">12 MARCH 2021</h4>
-        </div>
-      </div>
-      <div class="user-box">
-        <div class="avatar">
-          <img src="../images/user-avatar-6.png" alt="man">
-        </div>
-        <div class="user-info">
-          <h3>Ralf Grugo <i class="fa fa-star"></i><i class="fa fa-star"></i></h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, voluptate. Hic placeat excepturi quasi similique.</p>
-          <h4 class="user-date">12 MARCH 2021</h4>
-        </div>
-      </div>
-      <div class="user-box">
-        <div class="avatar">
-          <img src="../images/man-round.png" alt="man">
-        </div>
-        <div class="user-info">
-          <h3>Ralf Grugo <i class="fa fa-star"></i><i class="fa fa-star"></i></h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, voluptate. Hic placeat excepturi quasi similique.</p>
-          <h4 class="user-date">12 MARCH 2021</h4>
-        </div>
-      </div>
-    </div>
-    <!-- Quick Navigator -->
-    <footer>
-      <div class="quick-navigator">
-        <div class="location">
-          <h3>Logo</h3>
-          <p><i class="fa fa-phone"></i> +998997581317</p>
-          <p><i class="fa fa-mail-bulk"></i> example@mail.ru</p>
-          <p><i class="fa fa-location"></i> New York</p>
-        </div>
-        <div class="company">
-          <h3>Company</h3>
-          <ul class="custom-nav-quick">
-            <li class="nav-item1">
-              <a href="#" class="nav-link1">home</a>
-            </li>
-            <li class="nav-item1">
-              <a href="#" class="nav-link1">services</a>
-            </li>
-            <li class="nav-item1">
-              <a href="#" class="nav-link1">about</a>
-            </li>
-            <li class="nav-item1">
-              <a href="#" class="nav-link1">blog</a>
-            </li>
-            <li class="nav-item1">
-              <a href="#" class="nav-link1">pages</a>
-            </li>
-            <li class="nav-item1">
-              <a href="#" class="nav-link1">contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="news">
-          <h3>News</h3>
-          <ul class="custom-nav-quick">
-            <li class="nav-item1">
-              <a href="#" class="nav-link1">home</a>
-            </li>
-            <li class="nav-item1">
-              <a href="#" class="nav-link1">services</a>
-            </li>
-            <li class="nav-item1">
-              <a href="#" class="nav-link1">about</a>
-            </li>
-            <li class="nav-item1">
-              <a href="#" class="nav-link1">blog</a>
-            </li>
-            <li class="nav-item1">
-              <a href="#" class="nav-link1">pages</a>
-            </li>
-            <li class="nav-item1">
-              <a href="#" class="nav-link1">contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="learn-more-section">
-          <h3>Learn more</h3>
-          <ul class="custom-nav-quick">
-            <li class="nav-item1">
-              <a href="#" class="nav-link1">home</a>
-            </li>
-            <li class="nav-item1">
-              <a href="#" class="nav-link1">services</a>
-            </li>
-            <li class="nav-item1">
-              <a href="#" class="nav-link1">about</a>
-            </li>
-            <li class="nav-item1">
-              <a href="#" class="nav-link1">blog</a>
-            </li>
-            <li class="nav-item1">
-              <a href="#" class="nav-link1">pages</a>
-            </li>
-            <li class="nav-item1">
-              <a href="#" class="nav-link1">contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer">
-        <div>
-          <p>
-            &copy;
-            <script type="text/javascript">
-              document.write(new Date().getFullYear());
-            </script>
-            <a href="http://scala-coders.uz/">Scala Coders Team</a>
-          </p>
-        </div>
-        <div>
-          <ul class="social-footer">
-            <li>
-              <a href="#"><i class="fab fa-facebook"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-  </body>
+</div>
+
+</body>
 </html>
