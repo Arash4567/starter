@@ -93,3 +93,34 @@ input.submit:hover {
     font-size: 150%;
     margin: 10px 0;
 }
+
+@media only screen and (max-width: 1200px) {
+    .leave-box,
+    .you-might,
+    .you-might-header,
+    .leave-a-reply,
+    .users-box {
+    width: 90%;
+    margin: auto;
+    }
+}
+@media only screen and (max-width: 600px) {
+    
+.you-might {
+    grid-template-columns: 1fr;
+  }
+  
+.your-name-box {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  
+input.submit {
+    width: 100%;
+    
+}
+
+.user-box {
+    grid-template-columns: 40% 60%;
+}
+}
