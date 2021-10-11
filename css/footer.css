@@ -34,14 +34,17 @@ footer {
   .company ul>li,.location ul>li, .news ul>li, .learn-more-section ul>li {
       padding-bottom: 5px;
   }
-  .footer {
+  .footer, .footer-coming {
       display: flex;
       justify-content: space-between;
       margin: 10vh 14vh;
       padding: 10px;
       font-size: 150%;
   }
-  .footer a {
+  .footer-coming {
+    justify-content: center;
+  }
+  .footer a, .footer-coming a {
       text-decoration: none;
       color: #fff;
       margin-left: 15px;

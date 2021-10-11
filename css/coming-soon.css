@@ -1,5 +1,5 @@
 body {
-    background-color: #adadad;
+    background-color: #777;
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
@@ -16,98 +16,80 @@ a {
 /*--------------------
 Coming soon
 --------------------*/
-
 #content {
-    padding-top: 10vh;
-    width: 100%;
-    margin: 0 auto;
-    min-height: 24px;
-    height: 100%;
+    padding: 10vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title h3 {
+    font-size: 5vw;
+    margin: 2vh;
+}
+.clock {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+}
+ul {
+    padding-left: 0;
+}
+.clock li{
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 5vh 3vh;
+    margin: 10px;
+}
+li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+}
+.person {
+    position: absolute;
+    width: 20%;
+    right: 5%;
+    z-index: -1;
+    top: 20%;
+}
+form {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.email-input {
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 12px;
+    width: 150% !important;
+}
+input.submit {
     position: relative;
-    text-align: center;
-}
-
-#content .title {
-    padding-top: 5vh;
-    font-size: 62px;
-    letter-spacing: 12px;
-    color: #ffffff;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-#content .title .first-text {
-    font-weight: 700;
-    font-weight: bold;
-}
-
-#content .title .last-text {
-    font-weight: 400;
-}
-
-#content section {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    margin: 0 auto;
-}
-#content section ul {
-    list-style-type: none;
-    margin-bottom: 0;
-    margin-left: 0;
-}
-#content section ul li {
-    display: inline-block;
-    margin-right: 2rem;
-    width: 170px;
-    height: 150px;
-    border-radius: 30px;
-    padding: 10px;
-    border: 2px solid #ffffff;
-}
-#content section .times {
-    font-size: 36px;
-    letter-spacing: 0;
+    left: -10%;
+    text-decoration: none;
     color: #fff;
-    font-weight: 400;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
+    padding: 10px 35px;
+    background-color: #f00;
+    border: 1px solid #f00;
+    border-radius: 25px;
+    font-size: 110%;
+    box-shadow: 0 0 20px #fff;
 }
 
-/* Form text input */
-#content input {
-    background-color: #adadad;
-    width: 563px;
-    height: 54px;
-    border-radius: 27px;
-    border: 1px solid #ffffff;
-    font-size: 16px;
-    letter-spacing: 0;
-    color: #ffffff;
-    font-weight: 400;
+input.submit:hover {
+    background-color: #fff;
+    color: #f00;
+    box-shadow: 0 0 20px #fff;
+    border-color: #777;
 }
 
-/* Form submit button */
-#content .inputBtn {
-    font-size: 20px;
-    letter-spacing: 0;
-    color: #ffffff;
-    font-weight: 400;
-    width: 184px;
-    height: 54px;
-    border-radius: 27px;
-    filter: drop-shadow(0 0 9px rgba(255,255,255,0.5));
-    background-color: #ff090f;
-    border: 1px solid #ff090f;
+.footer-coming {
+    margin: 0;
+    
 }
-
-#content .social-footer ul {
-    list-style-type: none;
-    margin-bottom: 0;
-    margin-left: 0;
-}
-#content .social-footer ul li {
-    display: inline-block;
-    margin-right: 5px;
-    color: #fff;
+.footer-coming i {
+    font-size: 70% !important;
 }
