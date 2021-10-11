@@ -13,9 +13,6 @@ a {
     text-decoration: none;
 }
 
-/*--------------------
-Coming soon
---------------------*/
 #content {
     padding: 10vh;
     color: #fff;
@@ -24,23 +21,41 @@ Coming soon
     align-items: center;
     flex-direction: column;
 }
-.title h3 {
-    font-size: 5vw;
-    margin: 2vh;
+
+#content .title {
+    padding-top: 5vh;
+    font-size: 62px;
+    letter-spacing: 12px;
+    color: #ffffff;
+    font-weight: 400;
+    text-transform: uppercase;
 }
+
+#content .title .first-text {
+    font-weight: 700;
+    font-weight: bold;
+}
+
+#content .title .last-text {
+    font-weight: 400;
+}
+
 .clock {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
 }
+
 ul {
     padding-left: 0;
 }
+
 .clock li{
     border: 1px solid #fff;
     border-radius: 20px;
     padding: 5vh 3vh;
     margin: 10px;
 }
+
 li {
     display: flex;
     flex-direction: column;
@@ -48,6 +63,7 @@ li {
     align-items: center;
     font-size: 2vw;
 }
+
 .person {
     position: absolute;
     width: 20%;
@@ -55,20 +71,48 @@ li {
     z-index: -1;
     top: 20%;
 }
+
 form {
     display: grid;
     grid-template-columns: 80% 20%;
 }
+
 .email-input {
+    background-color: #777;
     border-radius: 50px;
-    background-color: #fff;
     border: 1px solid #fff;
     padding: 12px;
     width: 150% !important;
+    margin-left: -30%;
+    color: #fff;
 }
+
+.email-input:focus {
+    outline: 0;
+}
+
+.email-input::-webkit-input-placeholder {
+    color: #fff;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.email-input:-moz-placeholder {
+    color: #fff;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.email-input:-ms-input-placeholder {
+    color: #fff;
+    font-weight: normal;
+    font-style: italic;
+}
+
 input.submit {
     position: relative;
-    left: -10%;
+    width: 125px;
+    left: 40%;
     text-decoration: none;
     color: #fff;
     padding: 10px 35px;
@@ -88,8 +132,47 @@ input.submit:hover {
 
 .footer-coming {
     margin: 0;
-    
 }
+
 .footer-coming i {
     font-size: 70% !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .person {
+        display: none;
+    }
+
+    #content .title {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .clock {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .clock li {
+        padding: 7vh 5vh;
+    }
+
+    li {
+        font-size: 5vw;
+    }
+
+    form {
+        justify-items: center;
+    }
+
+    .email-input {
+        margin-left: 10%;
+    }
+
+    input.submit {
+        width: 70px;
+        left: 80%;
+        padding: 10px 10px;
+        font-size: 90%;
+    }
+
 }
