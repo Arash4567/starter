@@ -2,12 +2,23 @@ footer {
     padding-top: 15vh;
     height: 55vh;
     width: 100%;
-    background-image: url(".././images/earth.png");
+    background-image: url(".././images/footer-about.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
+    background-position-y: 50%;
     color: #fff;
-  }
+}
+
+.footer-index {
+    background-image: url(".././images/earth.png");
+}
+
+.footer-error {
+    margin-top: -10%;
+    background: #000 !important;
+}
+
   .quick-navigator {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
