@@ -509,6 +509,12 @@ a.contact-us-btns:last-child {
 
 /* About Page End */
 
+.blog-wrapper {
+    background-color: black;
+    width: 50%;
+    margin: 0 auto;
+}
+
 /*--------------------
 Not Found Page
 --------------------*/
