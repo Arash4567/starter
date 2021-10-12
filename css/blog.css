@@ -1,3 +1,13 @@
+.blog-header {
+  height: 50vh;
+  background-color: #777;
+}
+.blog-title {
+  padding-top: 15vh;
+  text-align: center;
+  font-size: 250%;
+  color: #fff;
+}
 .you-might-header,
 .leave-a-reply {
   font-weight: bolder;
